@@ -6,3 +6,5 @@ the `price` bigger than 1000 (i.e. `SELECT * FROM order WHERE price > 1000`). If
 millions of records, this query can be greatly optimized by defining an index on the row `price`. The question is how is this 
 index used if we are selecting not from one table but from multiple tables joined by a condition.
 
+Imagine another case. We have a table `painting` which contains also columns `name` and `author_name`. We want to select
+all paintings of a given author and order them alphabetically by their names. Can we define an index to speed up such query.
